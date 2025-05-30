@@ -14,13 +14,15 @@ const GenreSelect = ({ genres, updateParent }) => {
 
   return (
     <>
-      <span className='me-4'>Select genre:</span>
-      <Form.Select style={{display: "inline", width: "auto"}} value={genre} onChange={onGenreSelect} aria-label="Select genre">
+      <Form.Group>
+        <Form.Label className='me-4'>Select genre:</Form.Label>
+        <Form.Select style={{display: "inline", width: "auto"}} value={genre} onChange={onGenreSelect} aria-label="Select genre">
         <option key={len} value={len}>None</option>
         { genres.map((genre, index) => (
-          <option key = { index } value={ index }>{ genre.replace("_", " ") }</option>
+          <option key = { index } value={ index }>{ genre }</option>
         )) }
       </Form.Select>
+      </Form.Group>
     </>
   );
 }
