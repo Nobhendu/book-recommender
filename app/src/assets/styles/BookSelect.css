@@ -1,0 +1,18 @@
+.book-select-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.book-label {
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.custom-typeahead {
+  flex-grow: 1;
+}
+
+.custom-typeahead .rbt-input-main {
+  width: 100%;
+}
